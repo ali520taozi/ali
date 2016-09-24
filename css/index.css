@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Helvetica;
+}
+a,
+input {
+  outline: none;
+  -webkit-appearance: none;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+#wrap {
+  width: 100%;
+  background: #eee;
+  height: 100%;
+  overflow: auto;
+}
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  z-index: 1;
+}
+#header img {
+  width: 2.4rem;
+  height: 0.88rem;
+  display: block;
+}
+.header-top {
+  height: 1.35rem;
+}
+.header-top h1 {
+  padding: 0.26rem 0 0.21rem;
+}
+#menu-nav {
+  width: 1.29rem;
+  height: 1.35rem;
+  float: left;
+  background: url("../img/menuBtn.png") no-repeat;
+  background-size: 0.82rem 2.33rem;
+}
+.menu-list {
+  background-position: center 0.16rem !important;
+}
+.menu-cansel {
+  background-position: center -1.2rem !important;
+}
+.header-btn {
+  padding-top: 0.21rem;
+}
+.header-btn a {
+  width: 1.11rem;
+  height: 0.78rem;
+  line-height: 0.78rem;
+  color: #ccc;
+  background: #690;
+  margin-right: 0.15rem;
+  font-size: 0.42rem;
+  text-align: center;
+  border-radius: 0.08rem;
+}
+.header-btn .header-search {
+  width: 1.3rem;
+  height: 0.88rem;
+  line-height: 0.88rem;
+  color: #fff;
+  margin: 0.03rem 0.3rem 0 0;
+  font-weight: bold;
+  border-radius: 0.1rem;
+}
+#header form {
+  height: 1.03rem;
+  padding: 0.16rem 0;
+}
+#header form input[type="text"] {
+  box-sizing: border-box;
+  width: 8.29rem;
+  height: 1.03rem;
+  background: #999;
+  padding: 0.05rem 0.1rem;
+  border: 1px solid #5a5a5a;
+  font-size: 0.41rem;
+  color: #333;
+  border-radius: 0.15rem 0 0 0.15rem;
+}
+#header form input[type="submit"] {
+  width: 2.03rem;
+  height: 1.03rem;
+  background: #414040;
+  font-size: 0.41rem;
+  color: #fff;
+  border-radius: 0 0.15rem 0.15rem 0;
+  border: none;
+}
+#header form input[type="text"]:focus {
+  background: #fff;
+}
+#header form input[type="text"]::-webkit-input-placeholder {
+  color: #333333;
+}
+#nav {
+  position: absolute;
+  left: 0;
+  top: 1.35rem;
+  width: 100%;
+  padding: 0.1rem 0;
+  border-top: 1px solid #6a6a6a;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+#nav li {
+  width: 22.5%;
+  height: 1.35rem;
+  line-height: 1.35rem;
+  font-size: 0.54rem;
+  text-align: center;
+  float: left;
+}
+#nav li a {
+  color: #fff;
+}
+/*内容区*/
+#content {
+  padding-top: 2.7rem;
+}
+#navScroll {
+  box-sizing: border-box;
+  height: 1.77rem;
+  border-bottom: 1px solid #ccc;
+  padding: 0.31rem 0 0.14rem 0;
+  overflow: hidden;
+}
+#navScroll #navs li {
+  height: 1.29rem;
+  padding: 0 0.38rem;
+  display: inline-block;
+}
+#navScroll #navs {
+  white-space: nowrap;
+  line-height: 1.29rem;
+  font-size: 0;
+  float: left;
+}
+#navs .active {
+  background: #690;
+}
+#navs .active a {
+  color: #fff;
+}
+#navs li a {
+  color: #020202;
+  font-size: 0.7rem;
+}
+/*轮播*/
+#wapper {
+  position: relative;
+  overflow: hidden;
+}
+#list {
+  position: absolute;
+}
+#list li {
+  float: left;
+}
+#list li img {
+  display: block;
+  width: 100%;
+}
+.nav {
+  position: absolute;
+  right: 1rem;
+  bottom: 3px;
+  width: 100%;
+  text-align: right;
+}
+.nav span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #ccc;
+}
+.nav .active {
+  background: #0F0;
+}
+#tab {
+  width: 10.46rem;
+  background: #fff;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#tab img {
+  width: 100%;
+}
+.tab-header {
+  height: 1.35rem;
+  line-height: 1.35rem;
+  font-size: 0.7rem;
+}
+.tab-header a {
+  color: #2b2b2b;
+}
+.tab-nav {
+  line-height: 1.05rem;
+  overflow: hidden;
+  position: relative;
+}
+.tab-nav a {
+  float: left;
+  width: 1.2rem;
+  height: 1.05rem;
+  font-size: 0.4rem;
+  text-align: center;
+  color: #6b6b6b;
+}
+.tab-nav span {
+  position: absolute;
+  left: 0;
+  bottom: 0.1rem;
+  width: 1.2rem;
+  height: 0.09rem;
+  background: #6f900d;
+}
+.tab-list {
+  width: 300%;
+  overflow: hidden;
+}
+.tab-list ul {
+  float: left;
+  width: 33.333333333333%;
+}
+.tab-list li {
+  box-sizing: border-box;
+  width: 5.06rem;
+  margin: 0.08rem;
+  padding: 0.05rem;
+  background: #efefef;
+  float: left;
+}
+.tab-list li a {
+  display: block;
+  font-size: 0.4rem;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.loding {
+  background: url("../img/loading.gif") no-repeat;
+  background-position: 50% 50%;
+  height: 1.01rem;
+  opacity: 0;
+}
